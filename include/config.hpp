@@ -143,12 +143,29 @@ inline const std::string kColChar8 = "󰊠";
 
 // Icons used in the info box
 // clang-format off
-inline const std::string kIconUser =   "";
-inline const std::string kIconDistro = "";
-inline const std::string kIconKernel = "";
-inline const std::string kIconWM =     "󰙀";
-inline const std::string kIconRAM =    "";
-inline const std::string kIconTerm =   "";
-inline const std::string kIconUptime = "󰔚";
-inline const std::string kIconPkgs =   "";
+inline const std::string kIconUser =    "";
+inline const std::string kIconDistro =  "󰣇";
+inline const std::string kIconKernel =  "";
+inline const std::string kIconWM =      "󰙀";
+inline const std::string kIconRAM =     "";
+inline const std::string kIconTerm =    "";
+inline const std::string kIconUptime =  "󰔚";
+inline const std::string kIconPkgs =    "";
+inline const std::string kIconTemp =    "";
+inline const std::string kIconBattery = "";
+inline const std::string kIconStorage = "";
+
+inline const std::string kIconMachine = "";
+inline const std::string kIconCPU =     "󰍛";
+inline const std::string kIconGPU =     "󰢮";
+inline const std::string kIconDisplay = "󰍹";
+inline const std::string kIconShell =   "";
+inline const std::string kIconIP =      "󰩟";
+
+inline const std::string kIconBatHealth = "";
+inline const std::string kIconBatCycles = "";
+
+inline const std::string kIconTempCPU =  "󰍛";
+inline const std::string kIconTempNVMe = "󰋊";
+inline const std::string kIconTempPCH =  "";
 // clang-format on

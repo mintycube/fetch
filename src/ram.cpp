@@ -1,5 +1,6 @@
 #include "ram.hpp"
 
+#include <algorithm>
 #include <cstdint>
 #include <fstream>
 #include <iomanip>
@@ -41,6 +42,8 @@ auto GetRamUsage() -> std::string {
   if (memAvailable == 0) {
     memAvailable = memFree + buffers + cached + sReclaimable - shmem;
   }
+  // Prevent weird negative values (edge case safety)
+  memAvailable = std::min(memAvailable, memTotal);
 
   uint64_t used = memTotal - memAvailable;
   std::stringstream ss;

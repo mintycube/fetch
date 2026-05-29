@@ -20,17 +20,19 @@ auto GetDisplayWidth(const std::string& input) -> int {
 }
 
 auto Pad(const std::string& str, size_t total_length) -> std::string {
-  if (str.size() >= total_length) {
+  int width = GetDisplayWidth(str);
+  if (width >= (int)total_length) {
     return str;
   }
-  return str + std::string(total_length - str.size(), ' ');
+  return str + std::string(total_length - width, ' ');
 }
 
 auto PadC(const std::string& str, size_t total_length) -> std::string {
-  if (str.size() >= total_length) {
+  int width = GetDisplayWidth(str);
+  if (width >= (int)total_length) {
     return str;
   }
-  size_t total_padding = total_length - str.size();
+  size_t total_padding = total_length - width;
   size_t left_padding = total_padding / 2;
   size_t right_padding = total_padding - left_padding;
 

@@ -1,6 +1,6 @@
 CXX = g++
 CXXFLAGS = -std=c++17 -Ofast -Iinclude
-LDFLAGS = -lX11
+LDFLAGS = -lX11 -lstdc++fs
 
 SRCDIR := src
 INCDIR := include
@@ -10,6 +10,7 @@ TARGET := fetch
 SRCS := $(wildcard $(SRCDIR)/*.cpp)
 OBJS := $(patsubst $(SRCDIR)/%.cpp, $(BUILDDIR)/%.o, $(SRCS))
 DEPS := $(OBJS:.o=.d)
+
 
 PREFIX := /usr/local
 BINDIR := $(PREFIX)/bin
