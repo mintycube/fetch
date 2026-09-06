@@ -86,9 +86,9 @@ auto main(int argc, char* argv[]) -> int {
     gray + " ├──────────── Battery ────────────┤" + reset,
 
     gray + "│ " + kCol6 + PadC(kIconIP, 1) + gray + " │ " + reset + PadC(GetLocalIP(), 27) +
-    gray + " │ " + kCol1 + " " + kIconBatHealth + reset + " " + Pad(GetBatteryHealth(), 20) + "  " + kCol3 + kIconBatCycles + reset + " " + Pad(GetBatteryCycleCount(), 2) + gray + "   │" + reset,
+    gray + " │ " + kCol1 + " " + kIconBatHealth + reset + " " + Pad(GetBatteryHealth(), 20) + "  " + kCol3 + kIconBatCycles + reset + " " + Pad(GetBatteryCycleCount(), 2) + gray + "  │" + reset,
 
-    gray + "╰───┴" + "─────────────────────────────┴───┴─────────────────────────────" + "╯" + reset
+    gray + "╰───┴" + "─────────────────────────────┴─────────────────────────────────" + "╯" + reset
   };
   // clang-format on
 
